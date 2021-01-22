@@ -63,6 +63,120 @@ public class TouristicPlacesOfQuito {
                     break;
                 case 2:
                     int optionChurches;
+                    do{
+                    System.out.println("~~~~~~~~~~~~ Churches in Quito ~~~~~~~~~~~~");                    
+                    System.out.println(" I will give you several options, the most common: ");
+                    System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+                    System.out.println("|1. The Basilica                 |");
+                    System.out.println("|2. Church Of Santo Domingo      |");
+                    System.out.println("|3. Church Of El Sagrario        |");
+                    System.out.println("|4. Exit                         |");
+                    System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+                    optionChurches = input.nextInt();
+                    switch(optionChurches){
+                        
+                    case 1:
+                           
+                            System.out.println(name + "Let's go to The Basilica");
+                            System.out.println("The Ubication" + " Of The Basilica Is:");
+                            System.out.println("Direction: Quito's Historic center "
+                                    + "between the streets, "
+                                    + "Carchi N122 y Venezuela");              
+                        {
+                            int The_Basilica;
+                            do{                               
+                                System.out.println(name + "you know how to get " + "there?");
+                                System.out.println("1. Yes");
+                                System.out.println("2. No");
+                                The_Basilica = input.nextInt();
+                                switch(The_Basilica){
+                                    case 1:
+                                        System.out.println(name + "have a good trip,"
+                                                + " follow the direction given,"
+                                                + " we will be accompanying you");
+                                        System.exit(0);
+                                        break;
+                                    case 2:
+                                        System.out.println("we will stay at your original point");
+                                        break;
+                                }
+                                 }while( The_Basilica != 2);
+                        }
+                           
+                            break;
+
+                    case 2:
+                            System.out.println(name + "Let's go to Church Of Santo Domingo");
+                            System.out.println("The Ubication" + " Of Church Of Santo Domingo Is:");
+                            System.out.println("Diretion: Quito's Historic center "
+                                    + "Calle Flores y Pereira");              
+                        {
+                            System.out.println("Let's go to Churches " + "Church Of Santo Domingo");
+                            {
+                            int Church_Of_Santo_Domingo;
+                            do{                               
+                                System.out.println(name+ " you know how to get "
+                                        + "there?");
+                                System.out.println("1. Yes");
+                                System.out.println("2. No");
+                                Church_Of_Santo_Domingo = input.nextInt();
+                                switch(Church_Of_Santo_Domingo){
+                                    case 1:
+                                        System.out.println(name + "have a good trip, "
+                                                + "follow the direction given"
+                                                + " we will be accompanying you");
+                                        System.exit(0);
+                                        break;
+                                    case 2:
+                                        System.out.println("we will stay at "
+                                                + "your original point");
+                                        break;
+                                }
+                            }while( Church_Of_Santo_Domingo != 2);
+                        }
+                        }
+                            break;
+                            
+                    case 3:
+                            System.out.println(name+ "Let's go to Church Of El Sagrario");
+                            System.out.println("The Ubication" + " Of Church Of El Sagrario Is:");
+                            System.out.println("Direction: Quito's Historic center "
+                                    + "García Moreno y Espejo");              
+                        {
+                            System.out.println(name + "Let's go to Churches " 
+                                    + "Church Of El Sagrario");
+                            {
+                            int Church_Of_El_Sagrario;
+                            do{                               
+                                System.out.println(name + " you know how to get " + "there?");
+                                System.out.println("1. Yes");
+                                System.out.println("2. No");
+                                Church_Of_El_Sagrario = input.nextInt();
+                                switch(Church_Of_El_Sagrario){
+                                    case 1:
+                                        System.out.println(name + "have a good trip, "
+                                                + "follow the direction given, "
+                                                + "we will be accompanying you");
+                                        System.exit(0);
+                                        break;
+                                    case 2:
+                                        System.out.println("we will stay at your original point");
+                                        break;
+                                }
+                            }while( Church_Of_El_Sagrario != 2);
+                        }
+                        }
+                            break;
+                        case 4:
+                            System.out.println("Good bye " + name + "come back soon");
+                            System.exit(0);
+                            break;
+                            default:
+                            System.out.println("Invalid option\n\n\n");
+                    break;
+                    }
+                }while (optionChurches !=4);
+                   
                     break;
                 case 3:
                     break;

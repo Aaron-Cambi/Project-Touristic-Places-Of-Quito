@@ -48,6 +48,30 @@ public class TouristicPlacesOfQuito {
             System.out.println("______________________________________");
             switch (option) {
                 case 1:
+            int optionP;
+                    do {
+            System.out.println("~~~~~~~~~~~~~~"
+                                + "\n" + "| The parks in Quito:" + "\n"
+                                + "~~~~~~~~~~~~~~");
+            System.out.println("| 1.Quito metopolitan park           |");
+            System.out.println("| 2.Itchimbia park                   |");
+            System.out.println("| 3.Carolina park                    |");
+            System.out.println("| 4. Exit                            |");
+            System.out.println("~~~~~~~~~~~~~~" + "\n"
+                                + "______________");
+
+            System.out.println(name + " Enter yout option  ");
+            System.out.print("--> ");
+                        optionP = input.nextInt();
+            System.out.println("______________");
+                        switch(optionP){
+                    case 1:System.out.println("Calle Manrique Lara,Quito");
+                    case 2:System.out.println("Calle Itchimbia,Quito");
+                    case 3:System.out.println("Av Naciones Unidas y Av De los Shyris ");
+                    case 4:
+                }
+                    } while(optionP != 4);
+                    
                     break;
                 case 2:
                     int optionC;

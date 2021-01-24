@@ -48,128 +48,16 @@ public class TouristicPlacesOfQuito {
             System.out.println("______________________________________");
             switch (option) {
                 case 1:
-                    int optionP;
-                    do {
-                        System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-                                + "\n" + "| The parks in Quito:" + "\n"
-                                + "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-                        System.out.println("| 1.Quito metopolitan park           |");
-                        System.out.println("| 2.Itchimbia park                   |");
-                        System.out.println("| 3.Carolina park                    |");
-                        System.out.println("| 4. Exit                            |");
-                        System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" + "\n"
-                                + "______________________________________");
-
-                        System.out.println(name + " Enter yout option  ");
-                        System.out.print("--> ");
-                        optionP = input.nextInt();
-                        System.out.println("______________________________________");
-                        switch(optionP){
-                            case 1:
-                            case 2:
-                            case 3:
-                            case 4:
-                        }
-                    } while(optionP != 4);
                     break;
                 case 2:
                     int optionC;
-                    do {
-                        System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-                                + "\n" + "| The Churches In Quito:" + "\n"
-                                + "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-                        System.out.println("| 1.The Basilic                      |");
-                        System.out.println("| 2.Church Of Santo Domingo          |");
-                        System.out.println("| 3.Church Of El Sagrario            |");
-                        System.out.println("| 4. Exit                            |");
-                        System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" 
-                                + "\n" + "______________________________________");
-
-                        System.out.println(name + " Enter yout option  ");
-                        System.out.print("--> ");
-                        optionC = input.nextInt();
-                        System.out.println("______________________________________");
-                        switch(optionC){
-                            case 1:
-                            case 2:
-                            case 3:
-                            case 4:
-                        }
-                    } while(optionC != 4);
                     break;
                 case 3:
-                    int optionS;
-                    do{
-                    System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-                            + "\n" + "| The Square In Quito:" + "\n"
-                            + "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-                    System.out.println("| 1.The Big Square                   |");
-                    System.out.println("| 2.Theater Square                   |");
-                    System.out.println("| 3. Las Americas Square             |");
-                    System.out.println("| 4. Exit                            |");
-                    System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-                            + "\n" + "______________________________________");
-
-                    System.out.println(name + " Enter yout option  ");
-                    System.out.print("--> ");
-                    optionS = input.nextInt();
-                    System.out.println("______________________________________");
-                     switch(optionS){
-                            case 1:
-                            case 2:
-                            case 3:
-                            case 4:
-                        }
-                    }while(optionS !=4);
                     break;
                 case 4:
-                    int optionV;
-                    do{
-                    System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-                            + "\n" + "| The Viewpoints In Quito:" + "\n"
-                            + "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-                    System.out.println("| 1.Panecillo                        |");
-                    System.out.println("| 2.Viewpoint the Guapulo            |");
-                    System.out.println("| 3.Viewpoint the Cruz Loma          |");
-                    System.out.println("| 4. Exit                            |");
-                    System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-                            + "\n" + "______________________________________");
 
-                    System.out.println(name + " Enter yout option  ");
-                    System.out.print("--> ");
-                    optionV = input.nextInt();
-                    System.out.println("______________________________________");
-                     switch(optionV){
-                            case 1:
-                            case 2:
-                            case 3:
-                            case 4:
-                        }
-                     }while(optionV !=4);
                     break;
-                case 5:
-                    int optionM;
-                    do{
-                    System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-                            + "\n" + "| The Museums in Quito:" + "\n"
-                            + "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-                    System.out.println("| 1.Quito metopolitan park           |");
-                    System.out.println("| 2.Itchimbia park                   |");
-                    System.out.println("| 3.Carolina park                    |");
-                    System.out.println("| 4. Exit                            |");
-                    System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" +
-                            "\n" + "______________________________________");
-                    System.out.println(name + " Enter yout option  ");
-                    System.out.print("--> ");
-                    optionM = input.nextInt();
-                    System.out.println("______________________________________");
-                     switch(optionM){
-                            case 1:
-                            case 2:
-                            case 3:
-                            case 4:
-                        }
-                     }while(optionM !=4);
+                case 5:                    
                     break;
                     case 6:
                     System.out.println("Good bay " + name);

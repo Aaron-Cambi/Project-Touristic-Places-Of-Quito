@@ -30,7 +30,7 @@ public class TouristicPlacesOfQuito {
             System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~" + "\n"
                     + "______________________________________");
 
-            System.out.println(name + " Enter yout option  ");
+            System.out.println(name + " Enter your option  ");
             System.out.print("--> ");
             option = input.nextInt();
             System.out.println("______________________________________");

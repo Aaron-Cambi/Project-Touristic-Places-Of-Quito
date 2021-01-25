@@ -179,10 +179,41 @@ public class TouristicPlacesOfQuito {
                                 break;
                         }
                     } while (optionChurches != 4);
+                     int optionQ = 0;
+                    do {
+                        System.out.println("~~~~~~~~~~~~~~"
+                                + "\n" + "| The parks in Quito:" + "\n"
+                                + "~~~~~~~~~~~~~~");
+                        System.out.println("| 1.Plaza Grande            |");
+                        System.out.println("| 2.Plaza del Teatro                   |");
+                        System.out.println("| 3.Plaza las Americas                    |");
+                        System.out.println("| 4. Exit                            |");
+                        System.out.println("~~~~~~~~~~~~~~" + "\n"
+                                + "______________");
+
+                        System.out.println(name + " Enter yout option  ");
+                        System.out.print("--> ");
+                        optionP = input.nextInt();
+                        System.out.println("______________");
+                        switch (optionQ) {
+                            case 1:
+                                System.out.println("and Chile St Venezuela,"
+                                        + " García Moreno, Quito 170401");
+                            case 2:
+                                System.out.println("Calle Guayaquil entre "
+                                        + "Manabi y Flores, Quito 170150");
+                            case 3:
+                                System.out.println("Avenida NNUU Oe4-27 y,"
+                                        + "a Av. de la República, Quito ");
+                            case 4:
+                        }
+                    } while (optionP != 4);
+
+                    
 
                     break;
                 case 3:
-                    break;
+                    
                 case 4:
                     int optionV;
                     do {

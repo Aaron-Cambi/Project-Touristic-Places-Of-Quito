@@ -9,7 +9,7 @@ public class TouristicPlacesOfQuito {
         Scanner input = new Scanner(System.in);
         String name;
         boolean mainLoop = true;
-        int option;
+        int option;      
         System.out.println("Enter name");
         name = input.nextLine();
         System.out.println("\n");
@@ -179,7 +179,11 @@ public class TouristicPlacesOfQuito {
                                 break;
                         }
                     } while (optionChurches != 4);
-                     int optionQ = 0;
+
+                    break;
+
+                case 3:
+                    int optionQ = 0;
                     do {
                         System.out.println("~~~~~~~~~~~~~~"
                                 + "\n" + "| The parks in Quito:" + "\n"
@@ -208,47 +212,24 @@ public class TouristicPlacesOfQuito {
                             case 4:
                         }
                     } while (optionP != 4);
-
-                    
-
                     break;
-                case 3:
-                    
+
                 case 4:
                     int optionV;
                     do {
-                        System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-                                + "\n" + "| The Viewpoints In Quito:" + "\n"
-                                + "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-                        System.out.println("| 1.Panecillo                        |");
-                        System.out.println("| 2.Viewpoint the Guapulo            |");
-                        System.out.println("| 3.Viewpoint the Cruz Loma          |");
-                        System.out.println("| 4. Exit                            |");
-                        System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-                                + "\n" + "______________________________________");
-
-                        System.out.println(name + " Enter yout option  ");
-                        System.out.print("--> ");
-                        optionV = input.nextInt();
-                        System.out.println("______________________________________");
+                        optionV = showMenuViewpoints(name, input);
                         switch (optionV) {
-                            case 1:
-                                System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-                                        + "\n" + "| The Viewpoints Panecillo:" + "\n"
-                                        + "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-                                System.out.println("The Ubication" + "sector historical Center");
-                                System.out.println("Direction: Cumbre del Panecillo, "
-                                        + "Gral Melchor Aymerich");
+                            case 1:                              
+                                int areaP[][] = {{205, 353, 1}, {145, 458, 1}, {128, 454, 1}};
+                                showInfPanecillo();
+                                showArea(areaP); 
                                  {
                                     System.out.println(name + "Let's go to Viewpoint "
                                             + "Panecillo");
                                     {
                                         int panecillo;
                                         do {
-                                            System.out.println(name + " you know how to get " + "there?");
-                                            System.out.println("1. Yes");
-                                            System.out.println("2. No");
-                                            panecillo = input.nextInt();
+                                            panecillo = showOptionPanecillo(name, input);
                                             switch (panecillo) {
                                                 case 1:
                                                     System.out.println(name + "have a good trip, "
@@ -265,21 +246,15 @@ public class TouristicPlacesOfQuito {
                                 }
                                 break;
                             case 2:
-                                System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-                                        + "\n" + "| The Viewpoints Guapulo" + "\n"
-                                        + "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-                                System.out.println("The Ubication" + " Sector Guapulo");
-                                System.out.println("Direction: the intersection "
-                                        + "of Av. Rafael León and Stubel.");
+                                int areaG[][] = {{100, 223, 1}, {145, 358, 1}, {128, 254, 1}};
+                                showInfGuapulo();
+                                showArea(areaG);
                                  {
                                     {
-                                        int Mall_El_Jardin;
+                                        int guapulo;
                                         do {
-                                            System.out.println(name + " you know how to get " + "there?");
-                                            System.out.println("1. Yes");
-                                            System.out.println("2. No");
-                                            Mall_El_Jardin = input.nextInt();
-                                            switch (Mall_El_Jardin) {
+                                            guapulo = showOptionGueapulo(name, input);
+                                            switch (guapulo) {
                                                 case 1:
                                                     System.out.println(name + "have a good trip, "
                                                             + "follow the direction given, "
@@ -290,26 +265,22 @@ public class TouristicPlacesOfQuito {
                                                     System.out.println("we will stay at your original point");
                                                     break;
                                             }
-                                        } while (Mall_El_Jardin != 2);
+                                        } while (guapulo != 2);
                                     }
                                 }
                                 break;
                             case 3:
-                                System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
-                                        + "\n" + "| The Viewpoints cruz loma:" + "\n"
-                                        + "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-                                System.out.println("The Ubication" + " Lloa Parish");
+                                 int areaC[][] = {{95, 214, 1}, {272, 345, 1}, {108, 234, 1}};
+                                showInfCruzLoma();
+                                showArea(areaC);
                                  {
                                     System.out.println(name + "Let's go to Viewpoint "
                                             + "CRUZ LOMA");
                                     {
-                                        int Mall_El_Jardin;
+                                        int cruzLoma;
                                         do {
-                                            System.out.println(name + " you know how to get " + "there?");
-                                            System.out.println("1. Yes");
-                                            System.out.println("2. No");
-                                            Mall_El_Jardin = input.nextInt();
-                                            switch (Mall_El_Jardin) {
+                                            cruzLoma = showOptionCruzLoma(name, input);
+                                            switch (cruzLoma) {
                                                 case 1:
                                                     System.out.println(name + "have a good trip, "
                                                             + "follow the direction given, "
@@ -320,7 +291,7 @@ public class TouristicPlacesOfQuito {
                                                     System.out.println("we will stay at your original point");
                                                     break;
                                             }
-                                        } while (Mall_El_Jardin != 2);
+                                        } while (cruzLoma != 2);
                                     }
                                 }
                                 break;
@@ -456,4 +427,86 @@ public class TouristicPlacesOfQuito {
 
     }
 
+    private static int showOptionCruzLoma(String name, Scanner input) {
+        int cruzLoma;
+        System.out.println(name + " you know how to get " + "there?");
+        System.out.println("1. Yes");
+        System.out.println("2. No");
+        cruzLoma = input.nextInt();
+        return cruzLoma;
+    }
+
+    private static void showInfCruzLoma() {
+        System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+                + "\n" + "| The Viewpoints cruz loma:" + "\n"
+                + "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+        System.out.println("The Ubication" + " Lloa Parish");
+    }
+
+    private static int showOptionGueapulo(String name, Scanner input) {
+        int guapulo;
+        System.out.println(name + " you know how to get " + "there?");
+        System.out.println("1. Yes");
+        System.out.println("2. No");
+        guapulo = input.nextInt();
+        return guapulo;
+    }
+
+    private static void showInfGuapulo() {
+        System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+                + "\n" + "| The Viewpoints Guapulo" + "\n"
+                + "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+        System.out.println("The Ubication" + " Sector Guapulo");
+        System.out.println("Direction: the intersection "
+                + "of Av. Rafael León and Stubel.");
+    }
+
+    private static int showOptionPanecillo(String name, Scanner input) {
+        int panecillo;
+        System.out.println(name + " you know how to get " + "there?");
+        System.out.println("1. Yes");
+        System.out.println("2. No");
+        panecillo = input.nextInt();
+        return panecillo;
+    }
+
+    private static void showInfPanecillo() {
+        System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+                + "\n" + "| The Viewpoints Panecillo:" + "\n"
+                + "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+        System.out.println("The Ubication" + "sector historical Center");
+        System.out.println("Direction: Cumbre del Panecillo, "
+                + "Gral Melchor Aymerich");
+    }
+
+    private static int showMenuViewpoints(String name, Scanner input) {
+        int optionV;
+        System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+                + "\n" + "| The Viewpoints In Quito:" + "\n"
+                + "~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+        System.out.println("| 1.Panecillo                        |");
+        System.out.println("| 2.Viewpoint the Guapulo            |");
+        System.out.println("| 3.Viewpoint the Cruz Loma          |");
+        System.out.println("| 4. Exit                            |");
+        System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~"
+                + "\n" + "______________________________________");
+        System.out.println(name + " Enter yout option  ");
+        System.out.print("--> ");
+        optionV = input.nextInt();
+        System.out.println("______________________________________");
+        return optionV;
+    }
+
+    public static void showArea(int[][] matrix) {
+        int det;
+        int area;
+        det =  (matrix[0][0] * matrix[1][1] * matrix[2][2])
+                + (matrix[0][1] * matrix[1][2] * matrix[2][0])
+                + (matrix[1][0] * matrix[2][1] * matrix[0][2])
+                - (matrix[0][2] * matrix[1][1] * matrix[2][0]) 
+                - (matrix[1][0] * matrix[0][1] * matrix[2][2])
+                - (matrix[1][2] * matrix[2][1] * matrix[0][0]);
+        area = det / 2;
+        System.out.println("this area is -> " + area + " m^2");
+    }
 }

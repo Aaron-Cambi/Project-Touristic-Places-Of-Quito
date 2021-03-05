@@ -1,6 +1,9 @@
 package touristicplacesofquito2;
+
 import java.util.Scanner;
+
 public class TouristicPlacesOfQuito2 {
+
     public static void main(String[] args) {
         // TODO code application logic here
         Scanner input = new Scanner(System.in);
@@ -41,11 +44,9 @@ public class TouristicPlacesOfQuito2 {
                         optionChurches = input.nextInt();
                         switch (optionChurches) {
                             case 1:
-                                System.out.println(name + "Let's go to The Basilica");
-                                System.out.println("The Ubication" + " Of The Basilica Is:");
-                                System.out.println("Direction: Quito's Historic center "
-                                        + "between the streets, "
-                                        + "Carchi N122 y Venezuela");
+                                int matrixB[][] = {{200, 341, 3}, {103, 483, 3}, {120, 406, 3}};
+                                showInfChurchTheBasilica(name);
+                                showAreaB(matrixB);
                                  {
                                     int The_Basilica;
                                     do {
@@ -66,10 +67,9 @@ public class TouristicPlacesOfQuito2 {
                                 }
                                 break;
                             case 2:
-                                System.out.println(name + "Let's go to Church Of Santo Domingo");
-                                System.out.println("The Ubication" + " Of Church Of Santo Domingo Is:");
-                                System.out.println("Diretion: Quito's Historic center "
-                                        + "Calle Flores y Pereira");
+                                int matrixSD[][] = {{103, 241, 3}, {173, 398, 3}, {100, 239, 3}};
+                                showInfChurchOfSantoDomingo(name);
+                                showArea(matrixSD);
                                  {
                                     System.out.println("Let's go to Churches " + "Church Of Santo Domingo");
                                     {
@@ -94,10 +94,9 @@ public class TouristicPlacesOfQuito2 {
                                 }
                                 break;
                             case 3:
-                                System.out.println(name + "Let's go to Church Of El Sagrario");
-                                System.out.println("The Ubication" + " Of Church Of El Sagrario Is:");
-                                System.out.println("Direction: Quito's Historic center "
-                                        + "García Moreno y Espejo");
+                                int matrixS[][] = {{101, 220, 3}, {205, 303, 3}, {161, 272, 3}};
+                                showInfChurchOfElSagrario(name);
+                                showArea(matrixS);
                                  {
                                     System.out.println(name + "Let's go to Churches "
                                             + "Church Of El Sagrario");
@@ -131,7 +130,7 @@ public class TouristicPlacesOfQuito2 {
                         }
                     } while (optionChurches != 4);
                     break;
-                case 3:                  
+                case 3:
                     int optionS = 0;
                     do {
                         System.out.println("~~"
@@ -201,7 +200,7 @@ public class TouristicPlacesOfQuito2 {
                             case 2:
                                 int areaG[][] = {{100, 223, 1}, {145, 358, 1}, {128, 254, 1}};
                                 ShowInfGuapulo();
-                                 showArea(areaG);
+                                showArea(areaG);
                                  {
                                     {
                                         int optionG;
@@ -369,6 +368,41 @@ public class TouristicPlacesOfQuito2 {
                 != 6);
     }
 
+    private static void showAreaB(int[][] matrixB) {
+        int det;
+        int area;
+        det = (matrixB[0][0] * matrixB[1][1] * matrixB[2][2])
+                + (matrixB[0][1] * matrixB[1][2] * matrixB[2][0])
+                + (matrixB[1][0] * matrixB[2][1] * matrixB[0][2])
+                - (matrixB[0][2] * matrixB[1][1] * matrixB[2][0])
+                - (matrixB[1][0] * matrixB[0][1] * matrixB[2][2])
+                - (matrixB[1][2] * matrixB[2][1] * matrixB[0][0]);
+        area = det / 2;
+        System.out.println("this area is -> " + area + " m^2");
+    }
+
+    private static void showInfChurchOfElSagrario(String name) {
+        System.out.println(name + "Let's go to Church Of El Sagrario");
+        System.out.println("The Ubication" + " Of Church Of El Sagrario Is:");
+        System.out.println("Direction: Quito's Historic center "
+                + "García Moreno y Espejo");
+    }
+
+    private static void showInfChurchTheBasilica(String name) {
+        System.out.println(name + "Let's go to The Basilica");
+        System.out.println("The Ubication" + " Of The Basilica Is:");
+        System.out.println("Direction: Quito's Historic center "
+                + "between the streets, "
+                + "Carchi N122 y Venezuela");
+    }
+
+    private static void showInfChurchOfSantoDomingo(String name) {
+        System.out.println(name + "Let's go to Church Of Santo Domingo");
+        System.out.println("The Ubication" + " Of Church Of Santo Domingo Is:");
+        System.out.println("Diretion: Quito's Historic center "
+                + "Calle Flores y Pereira");
+    }
+
     private static void showInfCruzLoma() {
         System.out.println("~~~~~~"
                 + "\n" + "| The Viewpoints cruz loma:" + "\n"
@@ -458,13 +492,14 @@ public class TouristicPlacesOfQuito2 {
         System.out.println(name + " Enter yout option  ");
         System.out.print("--> ");
     }
-      public static void showArea(int[][] matrix) {
-         int det;
+
+    public static void showArea(int[][] matrix) {
+        int det;
         int area;
-        det =  (matrix[0][0] * matrix[1][1] * matrix[2][2])
+        det = (matrix[0][0] * matrix[1][1] * matrix[2][2])
                 + (matrix[0][1] * matrix[1][2] * matrix[2][0])
                 + (matrix[1][0] * matrix[2][1] * matrix[0][2])
-                - (matrix[0][2] * matrix[1][1] * matrix[2][0]) 
+                - (matrix[0][2] * matrix[1][1] * matrix[2][0])
                 - (matrix[1][0] * matrix[0][1] * matrix[2][2])
                 - (matrix[1][2] * matrix[2][1] * matrix[0][0]);
         area = det / 2;

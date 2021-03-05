@@ -317,12 +317,12 @@ case 3:
                             } while (optionChurches != 4);
 
                             break;
-
                         case 3:
+
                             int optionQ = 0;
                             do {
                                 System.out.println("~~~~~~~~~~~~~~"
-                                        + "\n" + "| The parks in Quito:" + "\n"
+                                        + "\n" + "| The places in Quito:" + "\n"
                                         + "~~~~~~~~~~~~~~");
                                 System.out.println("| 1.Plaza Grande            |");
                                 System.out.println("| 2.Plaza del Teatro                   |");
@@ -333,6 +333,7 @@ case 3:
 
                                 System.out.println(name + " Enter yout option  ");
                                 System.out.print("--> ");
+<<<<<<< HEAD
                                 optionQ = input.nextInt();
 
                               case 3:
@@ -378,84 +379,23 @@ case 3:
                             do {
                                 optionV = showMenuViewpoints(name, input);
                                 switch (optionV) {
+=======
+                                optionP = input.nextInt();
+                                System.out.println("______________");
+                                switch (optionQ) {
+>>>>>>> 2614271e5150fdac8cda62b3f2209e430baf960b
                                     case 1:
-                                        int areaP[][] = {{205, 353, 1}, {145, 458, 1}, {128, 454, 1}};
-                                        showInfPanecillo();
-                                        showArea(areaP);
-                                         {
-                                            System.out.println(name + "Let's go to Viewpoint "
-                                                    + "Panecillo");
-                                            {
-                                                int panecillo;
-                                                do {
-                                                    panecillo = showOptionPanecillo(name, input);
-                                                    switch (panecillo) {
-                                                        case 1:
-                                                            System.out.println(name + "have a good trip, "
-                                                                    + "follow the direction given, "
-                                                                    + "we will be accompanying you");
-                                                            System.exit(0);
-                                                            break;
-                                                        case 2:
-                                                            System.out.println("we will stay at your original point");
-                                                            break;
-                                                    }
-                                                } while (panecillo != 2);
-                                            }
-                                        }
-                                        break;
+                                        System.out.println("and Chile St Venezuela,"
+                                                + " García Moreno, Quito 170401");
                                     case 2:
-                                        int areaG[][] = {{100, 223, 1}, {145, 358, 1}, {128, 254, 1}};
-                                        showInfGuapulo();
-                                        showArea(areaG);
-                                         {
-                                            {
-                                                int guapulo;
-                                                do {
-                                                    guapulo = showOptionGueapulo(name, input);
-                                                    switch (guapulo) {
-                                                        case 1:
-                                                            System.out.println(name + "have a good trip, "
-                                                                    + "follow the direction given, "
-                                                                    + "we will be accompanying you");
-                                                            System.exit(0);
-                                                            break;
-                                                        case 2:
-                                                            System.out.println("we will stay at your original point");
-                                                            break;
-                                                    }
-                                                } while (guapulo != 2);
-                                            }
-                                        }
-                                        break;
+                                        System.out.println("Calle Guayaquil entre "
+                                                + "Manabi y Flores, Quito 170150");
                                     case 3:
-                                        int areaC[][] = {{95, 214, 1}, {272, 345, 1}, {108, 234, 1}};
-                                        showInfCruzLoma();
-                                        showArea(areaC);
-                                         {
-                                            System.out.println(name + "Let's go to Viewpoint "
-                                                    + "CRUZ LOMA");
-                                            {
-                                                int cruzLoma;
-                                                do {
-                                                    cruzLoma = showOptionCruzLoma(name, input);
-                                                    switch (cruzLoma) {
-                                                        case 1:
-                                                            System.out.println(name + "have a good trip, "
-                                                                    + "follow the direction given, "
-                                                                    + "we will be accompanying you");
-                                                            System.exit(0);
-                                                            break;
-                                                        case 2:
-                                                            System.out.println("we will stay at your original point");
-                                                            break;
-                                                    }
-                                                } while (cruzLoma != 2);
-                                            }
-                                        }
-                                        break;
+                                        System.out.println("Avenida NNUU Oe4-27 y,"
+                                                + "a Av. de la República, Quito ");
                                     case 4:
                                 }
+<<<<<<< HEAD
 <<<<<<< HEAD
                                 break;
                             case 4:
@@ -522,79 +462,98 @@ case 3:
                                         }
 
                                         break;
+=======
+                            } while (optionQ != 4);
+                    }
+                    break;
+>>>>>>> 2614271e5150fdac8cda62b3f2209e430baf960b
 
-                                    case 2:
-                                        System.out.println(name + "Let's go to CCI");
-                                        System.out.println("The Ubication" + " Of The CCI Is:");
-                                        System.out.println("Diretion: Av. Amazonas N36-152 "
-                                                + "y Naciones Unidas. Quito 170102");
-                                         {
-                                            System.out.println("Let's go to Viewpoint " + "CCI");
-                                            {
-                                                int CCI;
-                                                do {
-                                                    System.out.println(name + " you know how to get "
-                                                            + "there?");
-                                                    System.out.println("1. Yes");
-                                                    System.out.println("2. No");
-                                                    CCI = input.nextInt();
-                                                    switch (CCI) {
-                                                        case 1:
-                                                            System.out.println(name + "have a good trip, "
-                                                                    + "follow the direction given"
-                                                                    + " we will be accompanying you");
-                                                            System.exit(0);
-                                                            break;
-                                                        case 2:
-                                                            System.out.println("we will stay at "
-                                                                    + "your original point");
-                                                            break;
-                                                    }
-                                                } while (CCI != 2);
+                case 4:
+                    int optionV;
+                    do {
+                        optionV = showMenuViewpoints(name, input);
+                        switch (optionV) {
+                            case 1:
+                                int areaP[][] = {{205, 353, 1}, {145, 458, 1}, {128, 454, 1}};
+                                showInfPanecillo();
+                                showArea(areaP);
+                                 {
+                                    System.out.println(name + "Let's go to Viewpoint "
+                                            + "Panecillo");
+                                    {
+                                        int panecillo;
+                                        do {
+                                            panecillo = showOptionPanecillo(name, input);
+                                            switch (panecillo) {
+                                                case 1:
+                                                    System.out.println(name + "have a good trip, "
+                                                            + "follow the direction given, "
+                                                            + "we will be accompanying you");
+                                                    System.exit(0);
+                                                    break;
+                                                case 2:
+                                                    System.out.println("we will stay at your original point");
+                                                    break;
                                             }
-                                        }
-                                        break;
-
-                                    case 3:
-                                        System.out.println(name + "Let's go to Mall_El_Jardin");
-                                        System.out.println("The Ubication" + " Of The Mall_El_Jardin Is:");
-                                        System.out.println("Direction: Av.Amazonas, Av. de la República N16-114 "
-                                                + "y, Quito 170518");
-                                         {
-                                            System.out.println(name + "Let's go to Viewpoint "
-                                                    + "Mall_El_Jardin");
-                                            {
-                                                int Mall_El_Jardin;
-                                                do {
-                                                    System.out.println(name + " you know how to get " + "there?");
-                                                    System.out.println("1. Yes");
-                                                    System.out.println("2. No");
-                                                    Mall_El_Jardin = input.nextInt();
-                                                    switch (Mall_El_Jardin) {
-                                                        case 1:
-                                                            System.out.println(name + "have a good trip, "
-                                                                    + "follow the direction given, "
-                                                                    + "we will be accompanying you");
-                                                            System.exit(0);
-                                                            break;
-                                                        case 2:
-                                                            System.out.println("we will stay at your original point");
-                                                            break;
-                                                    }
-                                                } while (Mall_El_Jardin != 2);
-                                            }
-                                        }
-                                        break;
-                                    case 4:
-                                        System.out.println("Good bye " + name + "come back soon");
-                                        System.exit(0);
-                                        break;
-                                    default:
-                                        System.out.println("Invalid option\n\n\n");
-                                        break;
+                                        } while (panecillo != 2);
+                                    }
                                 }
-                            } while (optionMalls != 4);
+                                break;
+                            case 2:
+                                int areaG[][] = {{100, 223, 1}, {145, 358, 1}, {128, 254, 1}};
+                                showInfGuapulo();
+                                showArea(areaG);
+                                 {
+                                    {
+                                        int guapulo;
+                                        do {
+                                            guapulo = showOptionGueapulo(name, input);
+                                            switch (guapulo) {
+                                                case 1:
+                                                    System.out.println(name + "have a good trip, "
+                                                            + "follow the direction given, "
+                                                            + "we will be accompanying you");
+                                                    System.exit(0);
+                                                    break;
+                                                case 2:
+                                                    System.out.println("we will stay at your original point");
+                                                    break;
+                                            }
+                                        } while (guapulo != 2);
+                                    }
+                                }
+                                break;
+                            case 3:
+                                int areaC[][] = {{95, 214, 1}, {272, 345, 1}, {108, 234, 1}};
+                                showInfCruzLoma();
+                                showArea(areaC);
+                                 {
+                                    System.out.println(name + "Let's go to Viewpoint "
+                                            + "CRUZ LOMA");
+                                    {
+                                        int cruzLoma;
+                                        do {
+                                            cruzLoma = showOptionCruzLoma(name, input);
+                                            switch (cruzLoma) {
+                                                case 1:
+                                                    System.out.println(name + "have a good trip, "
+                                                            + "follow the direction given, "
+                                                            + "we will be accompanying you");
+                                                    System.exit(0);
+                                                    break;
+                                                case 2:
+                                                    System.out.println("we will stay at your original point");
+                                                    break;
+                                            }
+                                        } while (cruzLoma != 2);
+                                    }
+                                }
+                                break;
+                            case 4:
+                        }
+                    } while (optionV != 4);
 
+<<<<<<< HEAD
                             break;
                         case 5:
                             int optionMalls;
@@ -610,108 +569,118 @@ case 3:
                                 optionMalls = input.nextInt();
                                 switch (optionMalls) {
 >>>>>>> 85cfa55332b46466cfc35310d097ba2577c3e7cb
+=======
+                    break;
+                case 5:
+                    int optionMalls;
+                    do {
+                        System.out.println("~~~~~~~~~~~~ Malls in Quito ~~~~~~~~~~~~");
+                        System.out.println(" I will give you several options, the most common: ");
+                        System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+                        System.out.println("|1.Quicentro_North        |");
+                        System.out.println("|2.CCI                    |");
+                        System.out.println("|3.Mall_El_Jardin         |");
+                        System.out.println("|4. Exit                  |");
+                        System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+                        optionMalls = input.nextInt();
+                        switch (optionMalls) {
+>>>>>>> 2614271e5150fdac8cda62b3f2209e430baf960b
 
-                                    case 1:
+                            case 1:
 
-                                        System.out.println(name + "Let's go to Quicentro_North");
-                                        System.out.println("The Ubication" + " Of The Quicentro_North Is:");
-                                        System.out.println("Direction: Avenida Naciones Unidas "
-                                                + "between Avenida 6 de Diciembre and, "
-                                                + "Av. de los Shyris. Quito");
-                                         {
-                                            int Quicentro_North;
-                                            do {
-                                                System.out.println(name + "you know how to get " + "there?");
-                                                System.out.println("1. Yes");
-                                                System.out.println("2. No");
-                                                Quicentro_North = input.nextInt();
-                                                switch (Quicentro_North) {
-                                                    case 1:
-                                                        System.out.println(name + "have a good trip,"
-                                                                + " follow the direction given,"
-                                                                + " we will be accompanying you");
-                                                        System.exit(0);
-                                                        break;
-                                                    case 2:
-                                                        System.out.println("we will stay at your original point");
-                                                        break;
-                                                }
-                                            } while (Quicentro_North != 2);
+                                System.out.println(name + "Let's go to Quicentro_North");
+                                System.out.println("The Ubication" + " Of The Quicentro_North Is:");
+                                System.out.println("Direction: Avenida Naciones Unidas "
+                                        + "between Avenida 6 de Diciembre and, "
+                                        + "Av. de los Shyris. Quito");
+                                 {
+                                    int Quicentro_North;
+                                    do {
+                                        System.out.println(name + "you know how to get " + "there?");
+                                        System.out.println("1. Yes");
+                                        System.out.println("2. No");
+                                        Quicentro_North = input.nextInt();
+                                        switch (Quicentro_North) {
+                                            case 1:
+                                                System.out.println(name + "have a good trip,"
+                                                        + " follow the direction given,"
+                                                        + " we will be accompanying you");
+                                                System.exit(0);
+                                                break;
+                                            case 2:
+                                                System.out.println("we will stay at your original point");
+                                                break;
                                         }
+                                    } while (Quicentro_North != 2);
+                                }
 
-                                        break;
+                                break;
 
-                                    case 2:
-                                        System.out.println(name + "Let's go to CCI");
-                                        System.out.println("The Ubication" + " Of The CCI Is:");
-                                        System.out.println("Diretion: Av. Amazonas N36-152 "
-                                                + "y Naciones Unidas. Quito 170102");
-                                         {
-                                            System.out.println("Let's go to Viewpoint " + "CCI");
-                                            {
-                                                int CCI;
-                                                do {
-                                                    System.out.println(name + " you know how to get "
-                                                            + "there?");
-                                                    System.out.println("1. Yes");
-                                                    System.out.println("2. No");
-                                                    CCI = input.nextInt();
-                                                    switch (CCI) {
-                                                        case 1:
-                                                            System.out.println(name + "have a good trip, "
-                                                                    + "follow the direction given"
-                                                                    + " we will be accompanying you");
-                                                            System.exit(0);
-                                                            break;
-                                                        case 2:
-                                                            System.out.println("we will stay at "
-                                                                    + "your original point");
-                                                            break;
-                                                    }
-                                                } while (CCI != 2);
+                            case 2:
+                                System.out.println(name + "Let's go to CCI");
+                                System.out.println("The Ubication" + " Of The CCI Is:");
+                                System.out.println("Diretion: Av. Amazonas N36-152 "
+                                        + "y Naciones Unidas. Quito 170102");
+                                 {
+                                    System.out.println("Let's go to Viewpoint " + "CCI");
+                                    {
+                                        int CCI;
+                                        do {
+                                            System.out.println(name + " you know how to get "
+                                                    + "there?");
+                                            System.out.println("1. Yes");
+                                            System.out.println("2. No");
+                                            CCI = input.nextInt();
+                                            switch (CCI) {
+                                                case 1:
+                                                    System.out.println(name + "have a good trip, "
+                                                            + "follow the direction given"
+                                                            + " we will be accompanying you");
+                                                    System.exit(0);
+                                                    break;
+                                                case 2:
+                                                    System.out.println("we will stay at "
+                                                            + "your original point");
+                                                    break;
                                             }
-                                        }
-                                        break;
+                                        } while (CCI != 2);
+                                    }
+                                }
+                                break;
 
-                                    case 3:
-                                        System.out.println(name + "Let's go to Mall_El_Jardin");
-                                        System.out.println("The Ubication" + " Of The Mall_El_Jardin Is:");
-                                        System.out.println("Direction: Av.Amazonas, Av. de la República N16-114 "
-                                                + "y, Quito 170518");
-                                         {
-                                            System.out.println(name + "Let's go to Viewpoint "
-                                                    + "Mall_El_Jardin");
-                                            {
-                                                int Mall_El_Jardin;
-                                                do {
-                                                    System.out.println(name + " you know how to get " + "there?");
-                                                    System.out.println("1. Yes");
-                                                    System.out.println("2. No");
-                                                    Mall_El_Jardin = input.nextInt();
-                                                    switch (Mall_El_Jardin) {
-                                                        case 1:
-                                                            System.out.println(name + "have a good trip, "
-                                                                    + "follow the direction given, "
-                                                                    + "we will be accompanying you");
-                                                            System.exit(0);
-                                                            break;
-                                                        case 2:
-                                                            System.out.println("we will stay at your original point");
-                                                            break;
-                                                    }
-                                                } while (Mall_El_Jardin != 2);
+                            case 3:
+                                System.out.println(name + "Let's go to Mall_El_Jardin");
+                                System.out.println("The Ubication" + " Of The Mall_El_Jardin Is:");
+                                System.out.println("Direction: Av.Amazonas, Av. de la República N16-114 "
+                                        + "y, Quito 170518");
+                                 {
+                                    System.out.println(name + "Let's go to Viewpoint "
+                                            + "Mall_El_Jardin");
+                                    {
+                                        int Mall_El_Jardin;
+                                        do {
+                                            System.out.println(name + " you know how to get " + "there?");
+                                            System.out.println("1. Yes");
+                                            System.out.println("2. No");
+                                            Mall_El_Jardin = input.nextInt();
+                                            switch (Mall_El_Jardin) {
+                                                case 1:
+                                                    System.out.println(name + "have a good trip, "
+                                                            + "follow the direction given, "
+                                                            + "we will be accompanying you");
+                                                    System.exit(0);
+                                                    break;
+                                                case 2:
+                                                    System.out.println("we will stay at your original point");
+                                                    break;
                                             }
-                                        }
-                                        break;
-                                    case 4:
-                                        System.out.println("Good bye " + name + "come back soon");
-                                        System.exit(0);
-                                        break;
-                                    default:
-                                        System.out.println("Invalid option\n\n\n");
-                                        break;
+                                        } while (Mall_El_Jardin != 2);
+                                    }
                                 }
 <<<<<<< HEAD
+<<<<<<< HEAD
+=======
+>>>>>>> 2614271e5150fdac8cda62b3f2209e430baf960b
                                 break;
                             case 4:
                                 System.out.println("Good bye " + name + "come back soon");
@@ -722,6 +691,7 @@ case 3:
                                 break;
                         }
                     } while (optionMalls != 4);
+<<<<<<< HEAD
 
                     break;
                 case 6:
@@ -739,17 +709,16 @@ case 3:
                     }
 
 >>>>>>> 85cfa55332b46466cfc35310d097ba2577c3e7cb
+=======
+
+                    break;
+               
+>>>>>>> 2614271e5150fdac8cda62b3f2209e430baf960b
             }
-            while (option
-                    != 6);
 
-        }
-
-    
-
-    
-
-    
+        }while(option !=5);
+        System.out.println("exit");
+    }
 
     public static int showOptionMetropolitanPark(String name, Scanner input) {
         int Metropolitan_Park;

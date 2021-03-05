@@ -368,7 +368,7 @@ public class TouristicPlacesOfQuito2 {
                 != 6);
     }
 
-    private static void showAreaB(int[][] matrixB) {
+    public static void showAreaB(int[][] matrixB) {
         int det;
         int area;
         det = (matrixB[0][0] * matrixB[1][1] * matrixB[2][2])

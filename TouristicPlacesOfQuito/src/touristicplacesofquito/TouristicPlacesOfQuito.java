@@ -145,7 +145,6 @@ public class TouristicPlacesOfQuito {
                                 System.out.println("| 4. Exit                            |");
                                 System.out.println("~~~~~~~~~~~~~~" + "\n"
                                         + "______________");
-
                                 System.out.println(name + " Enter yout option  ");
                                 System.out.print("--> ");
                                 optionP = input.nextInt();
@@ -160,14 +159,12 @@ public class TouristicPlacesOfQuito {
                                     case 4:
                                 }
                             } while (optionP != 4);
-
                             break;
                         case 2:
                             int optionChurches;
                             do {
                                 optionChurches = showMenuChurchesinQuito(input);
                                 switch (optionChurches) {
-
                                     case 1:
                                         int areaB[][] = {{135, 251, 4}, {103, 383, 4}, {100, 406, 4}};
                                         showInfBasilica(name);
@@ -189,9 +186,7 @@ public class TouristicPlacesOfQuito {
                                                 }
                                             } while (The_Basilica != 2);
                                         }
-
                                         break;
-
                                     case 2:
                                         int matrix[][] = {{203, 341, 4}, {173, 298, 4}, {100, 239, 4}};
                                         showInfSantoDomingo(name);
@@ -255,26 +250,11 @@ public class TouristicPlacesOfQuito {
                                         break;
                                 }
                             } while (optionChurches != 4);
-
                             break;
                         case 3:
-
                             int optionQ = 0;
                             do {
-                                System.out.println("~~~~~~~~~~~~~~"
-                                        + "\n" + "| The places in Quito:" + "\n"
-                                        + "~~~~~~~~~~~~~~");
-                                System.out.println("| 1.Plaza Grande            |");
-                                System.out.println("| 2.Plaza del Teatro                   |");
-                                System.out.println("| 3.Plaza las Americas                    |");
-                                System.out.println("| 4. Exit                            |");
-                                System.out.println("~~~~~~~~~~~~~~" + "\n"
-                                        + "______________");
-
-                                System.out.println(name + " Enter yout option  ");
-                                System.out.print("--> ");
-                                optionP = input.nextInt();
-                                System.out.println("______________");
+                                showBannerPlaces(name, input);
                                 switch (optionQ) {
                                     case 1:
                                         System.out.println("and Chile St Venezuela,"
@@ -290,7 +270,6 @@ public class TouristicPlacesOfQuito {
                             } while (optionQ != 4);
                     }
                     break;
-
                 case 4:
                     int optionV;
                     do {
@@ -375,24 +354,13 @@ public class TouristicPlacesOfQuito {
                             case 4:
                         }
                     } while (optionV != 4);
-
                     break;
                 case 5:
                     int optionMalls;
                     do {
-                        System.out.println("~~~~~~~~~~~~ Malls in Quito ~~~~~~~~~~~~");
-                        System.out.println(" I will give you several options, the most common: ");
-                        System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-                        System.out.println("|1.Quicentro_North        |");
-                        System.out.println("|2.CCI                    |");
-                        System.out.println("|3.Mall_El_Jardin         |");
-                        System.out.println("|4. Exit                  |");
-                        System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~");
-                        optionMalls = input.nextInt();
+                        optionMalls = showBannerMalls(input);
                         switch (optionMalls) {
-
                             case 1:
-
                                 System.out.println(name + "Let's go to Quicentro_North");
                                 System.out.println("The Ubication" + " Of The Quicentro_North Is:");
                                 System.out.println("Direction: Avenida Naciones Unidas "
@@ -499,6 +467,37 @@ public class TouristicPlacesOfQuito {
 
         }while(option !=5);
         System.out.println("exit");
+    }
+
+    private static int showBannerMalls(Scanner input) {
+        int optionMalls;
+        System.out.println("~~~~~~~~~~~~ Malls in Quito ~~~~~~~~~~~~");
+        System.out.println(" I will give you several options, the most common: ");
+        System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+        System.out.println("|1.Quicentro_North        |");
+        System.out.println("|2.CCI                    |");
+        System.out.println("|3.Mall_El_Jardin         |");
+        System.out.println("|4. Exit                  |");
+        System.out.println("~~~~~~~~~~~~~~~~~~~~~~~~~~~");
+        optionMalls = input.nextInt();
+        return optionMalls;
+    }
+
+    private static void showBannerPlaces(String name, Scanner input) {
+        int optionP;
+        System.out.println("~~~~~~~~~~~~~~"
+                + "\n" + "| The places in Quito:" + "\n"
+                + "~~~~~~~~~~~~~~");
+        System.out.println("| 1.Plaza Grande            |");
+        System.out.println("| 2.Plaza del Teatro                   |");
+        System.out.println("| 3.Plaza las Americas                    |");
+        System.out.println("| 4. Exit                            |");
+        System.out.println("~~~~~~~~~~~~~~" + "\n"
+                + "______________");
+        System.out.println(name + " Enter yout option  ");
+        System.out.print("--> ");
+        optionP = input.nextInt();
+        System.out.println("______________");
     }
 
     public static int showOptionMetropolitanPark(String name, Scanner input) {

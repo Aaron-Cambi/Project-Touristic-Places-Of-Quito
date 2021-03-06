@@ -253,36 +253,24 @@ public class TouristicPlacesOfQuito2 {
                         }
                     } while (optionV != 4);
                     break;
-                case 5:
+               case 5:
                     int optionMalls;
                     do {
-                        System.out.println("~~ Malls in Quito ~~");
-                        System.out.println(" I will give you several options, the most common: ");
-                        System.out.println("~~~");
-                        System.out.println("|1.Quicentro_North        |");
-                        System.out.println("|2.CCI                    |");
-                        System.out.println("|3.Mall_El_Jardin         |");
-                        System.out.println("|4. Exit                  |");
-                        System.out.println("~~~");
+                        showBannerMalls();
                         optionMalls = input.nextInt();
                         switch (optionMalls) {
                             case 1:
-                                System.out.println(name + "Let's go to Quicentro_North");
-                                System.out.println("The Ubication" + " Of The Quicentro_North Is:");
-                                System.out.println("Direction: Avenida Naciones Unidas "
-                                        + "between Avenida 6 de Diciembre and, "
-                                        + "Av. de los Shyris. Quito");
+                                int areamallQ [] []={{58, 45, 81}, {52, 58, 53}, {74, 47, 52}};
+                                showArea(areamallQ);
+                                showInfmallQuicentronorth(name);
                                  {
                                     int Quicentro_North;
                                     do {
-                                        System.out.println(name + "you know how to get " + "there?");
-                                        System.out.println("1. Yes");
-                                        System.out.println("2. No");
+                                        showOptionmalls(name);
                                         Quicentro_North = input.nextInt();
                                         switch (Quicentro_North) {
                                             case 1:
-                                                System.out.println(name + "have a good trip,"
-                                                        + " follow the direction given,"
+                                                System.out.println(name + " have a good trip, follow the direction given,"
                                                         + " we will be accompanying you");
                                                 System.exit(0);
                                                 break;
@@ -294,12 +282,11 @@ public class TouristicPlacesOfQuito2 {
                                 }
                                 break;
                             case 2:
-                                System.out.println(name + "Let's go to CCI");
-                                System.out.println("The Ubication" + " Of The CCI Is:");
-                                System.out.println("Diretion: Av. Amazonas N36-152 "
-                                        + "y Naciones Unidas. Quito 170102");
-                                 {
-                                    System.out.println("Let's go to Viewpoint " + "CCI");
+                                int areamallCCI [] []={{31, 54, 8}, {62, 10, 45}, {2, 7, 11}};
+                                showArea(areamallCCI);
+                                showInfCCI(name);
+                                 { 
+                                    System.out.println(" Let's go to Viewpoint " + "CCI");
                                     {
                                         int CCI;
                                         do {
@@ -307,8 +294,7 @@ public class TouristicPlacesOfQuito2 {
                                             CCI = input.nextInt();
                                             switch (CCI) {
                                                 case 1:
-                                                    System.out.println(name + "have a good trip, "
-                                                            + "follow the direction given"
+                                                    System.out.println(name + " have a good trip, follow the direction given"
                                                             + " we will be accompanying you");
                                                     System.exit(0);
                                                     break;
@@ -322,13 +308,11 @@ public class TouristicPlacesOfQuito2 {
                                 }
                                 break;
                             case 3:
-                                System.out.println(name + "Let's go to Mall_El_Jardin");
-                                System.out.println("The Ubication" + " Of The Mall_El_Jardin Is:");
-                                System.out.println("Direction: Av.Amazonas, Av. de la República N16-114 "
-                                        + "y, Quito 170518");
-                                 {
-                                    System.out.println(name + "Let's go to Viewpoint "
-                                            + "Mall_El_Jardin");
+                                int areamallJardin [] []={{12, 3, 16}, {16, 7, 12}, {5, 45, 5}};
+                                showArea(areamallJardin);
+                                showInfmallElJardin(name);
+                                 { 
+                                    System.out.println(name + " Let's go to Viewpoint " + "Mall_El_Jardin");
                                     {
                                         int Mall_El_Jardin;
                                         do {
@@ -336,8 +320,7 @@ public class TouristicPlacesOfQuito2 {
                                             Mall_El_Jardin = input.nextInt();
                                             switch (Mall_El_Jardin) {
                                                 case 1:
-                                                    System.out.println(name + "have a good trip, "
-                                                            + "follow the direction given, "
+                                                    System.out.println(name + "have a good trip, follow the direction given, "
                                                             + "we will be accompanying you");
                                                     System.exit(0);
                                                     break;
@@ -366,6 +349,46 @@ public class TouristicPlacesOfQuito2 {
             }
         } while (option
                 != 6);
+    }
+
+
+    public static void showInfmallElJardin(String name) {
+        System.out.println(name + "Let's go to Mall_El_Jardin");
+        System.out.println("The Ubication" + " Of The Mall_El_Jardin Is:");
+        System.out.println("Direction: Av.Amazonas, Av. de la República N16-114 "
+                + "y, Quito 170518");
+    }
+
+    public static void showInfCCI(String name) {
+        System.out.println(name + "Let's go to CCI");
+        System.out.println("The Ubication" + " Of The CCI Is:");
+        System.out.println("Diretion: Av. Amazonas N36-152 "
+                + "y Naciones Unidas. Quito 170102");
+    }
+
+    public static void showOptionmalls(String name) {
+        System.out.println(name + "you know how to get " + "there?");
+        System.out.println("1. Yes");
+        System.out.println("2. No");
+    }
+
+    public static void showInfmallQuicentronorth(String name) {
+        System.out.println(name + "Let's go to Quicentro_North");
+        System.out.println("The Ubication" + " Of The Quicentro_North Is:");
+        System.out.println("Direction: Avenida Naciones Unidas "
+                + "between Avenida 6 de Diciembre and, "
+                + "Av. de los Shyris. Quito");
+    }
+
+    public static void showBannerMalls() {
+        System.out.println("~~ Malls in Quito ~~");
+        System.out.println(" I will give you several options, the most common: ");
+        System.out.println("~~~");
+        System.out.println("|1.Quicentro_North        |");
+        System.out.println("|2.CCI                    |");
+        System.out.println("|3.Mall_El_Jardin         |");
+        System.out.println("|4. Exit                  |");
+        System.out.println("~~~");
     }
 
     public static void showAreaB(int[][] matrixB) {

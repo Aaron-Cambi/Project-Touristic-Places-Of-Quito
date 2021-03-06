@@ -46,7 +46,7 @@ public class TouristicPlacesOfQuito2 {
                             case 1:
                                 int matrixB[][] = {{200, 341, 3}, {103, 483, 3}, {120, 406, 3}};
                                 showInfChurchTheBasilica(name);
-                                showAreaB(matrixB);
+                                showArea(matrixB);
                                  {
                                     int The_Basilica;
                                     do {
@@ -389,19 +389,6 @@ public class TouristicPlacesOfQuito2 {
         System.out.println("|3.Mall_El_Jardin         |");
         System.out.println("|4. Exit                  |");
         System.out.println("~~~");
-    }
-
-    public static void showAreaB(int[][] matrixB) {
-        int det;
-        int area;
-        det = (matrixB[0][0] * matrixB[1][1] * matrixB[2][2])
-                + (matrixB[0][1] * matrixB[1][2] * matrixB[2][0])
-                + (matrixB[1][0] * matrixB[2][1] * matrixB[0][2])
-                - (matrixB[0][2] * matrixB[1][1] * matrixB[2][0])
-                - (matrixB[1][0] * matrixB[0][1] * matrixB[2][2])
-                - (matrixB[1][2] * matrixB[2][1] * matrixB[0][0]);
-        area = det / 2;
-        System.out.println("this area is -> " + area + " m^2");
     }
 
     private static void showInfChurchOfElSagrario(String name) {

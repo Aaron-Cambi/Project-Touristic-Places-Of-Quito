@@ -260,7 +260,7 @@ public class TouristicPlacesOfQuito2 {
                         optionMalls = input.nextInt();
                         switch (optionMalls) {
                             case 1:
-                                int areamallQ [] []={{58, 45, 81}, {52, 58, 53}, {74, 47, 52}};
+                                int areamallQ[][] = {{60, 55, 76}, {19, 26, 5}, {41, 58, 60}};
                                 showArea(areamallQ);
                                 showInfmallQuicentronorth(name);
                                  {
@@ -282,7 +282,7 @@ public class TouristicPlacesOfQuito2 {
                                 }
                                 break;
                             case 2:
-                                int areamallCCI [] []={{31, 54, 8}, {62, 10, 45}, {2, 7, 11}};
+                                int areamallCCI[][] = {{31, 50, 18}, {2, 7, 41}, {12, 13, 45}};
                                 showArea(areamallCCI);
                                 showInfCCI(name);
                                  { 
@@ -308,7 +308,7 @@ public class TouristicPlacesOfQuito2 {
                                 }
                                 break;
                             case 3:
-                                int areamallJardin [] []={{12, 3, 16}, {16, 7, 12}, {5, 45, 5}};
+                                int areamallJardin[][] = {{12, 3, 16}, {16, 5, 12}, {5, 19, 5}};
                                 showArea(areamallJardin);
                                 showInfmallElJardin(name);
                                  { 
